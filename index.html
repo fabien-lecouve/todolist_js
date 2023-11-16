@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>TODOLIST</h1>
+            <div id="header">
+                <input id="input" type="text" maxlength="50">
+                <button class="btn" id="add_btn" type="button"><i class="fas fa-plus"></i></button>
+            </div>
+            <div id="chars">
+                Restant : <span id="remainingChars"></span>
+            </div>
+        </header>
+
+        <main>
+            <div id="div-title">
+                <h2>A FAIRE</h2>
+                <p>(Cliquez sur un todo pour augmenter sa priorité)</p>
+            </div>
+            <div id="todos">
+            </div>
+        </main>
+
+        <footer>
+            <p id="todos_nbr"></p>
+            <button class="btn" id="clear_all" type="button">TOUT EFFACER</button>
+        </footer>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/a7e2f2f4a7.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

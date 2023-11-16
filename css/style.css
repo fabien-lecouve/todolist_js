@@ -1,0 +1,151 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+/* SETTINGS */
+:root {
+    --dark-blue: #005C94;
+    --blue: #38c0ff;
+    --white: #FFF6F6;
+    --peach: #FFDFDF;
+    --pink: #F875AA;
+}
+
+/* CONTAINERS */
+body {
+    background-image: url(../images/modele-sans-couture-ciel-nuageux-fond-ecran-nuages-motif-nuages-fond-ciel-bleu-abstrait-cloudscape-dessin-anime-moelleux-nature-temps-ensoleille-paradis-paques-decoration-enfant_8071-1525.webp);
+    backdrop-filter: blur(0.5px);
+}
+
+#container {
+    background-color: var(--white);
+    height: 96vh;
+    width: 50%;
+    margin: 2vh auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* TITLES */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--pink);
+}
+#div-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#div-title > * {
+    text-align: center;
+    color: var(--pink);
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+header {
+    margin: 20px 30px;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+#header input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid var(--peach);
+    color: var(--dark-blue);
+}
+input:focus {
+    outline: none;
+}
+#chars {
+    text-align: right;
+    width: 90%;
+    color: var(--dark-blue);
+    padding-right: 5px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 7px;
+    border: none;
+}
+.btn:hover, p:hover {
+    cursor: pointer;
+}
+.btn i {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+#add_btn {
+    color: var(--white);
+    background-color: var(--blue);
+}
+.delete_btn {
+    color: var(--pink);
+    background-color: var(--peach);
+}
+
+/* MAIN */
+main {
+    height: 70vh;
+}
+#todos {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.todo p {
+    width: 90%;
+    padding: 7px;
+    color: var(--dark-blue);
+    /* background-color: var(--peach); */
+    font-weight: bold;
+}
+.striped {
+    text-decoration: line-through;
+    color: var(--blue) !important;
+}
+
+/* FOOTER */
+footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+#todos_nbr {
+    color: var(--dark-blue);
+}
+.color_nbr {
+    color: var(--pink)
+}
+footer button {
+    color: var(--white);
+    background-color: var(--pink);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
